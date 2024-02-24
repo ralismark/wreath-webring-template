@@ -1,0 +1,23 @@
+# Site Variables --------------------------------------------------------------
+
+title: Wreath Webring Template
+
+# Jekyll Config ---------------------------------------------------------------
+
+collections:
+  ring:
+    output: true
+    permalink: /embed/:title
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "_ring"
+    values:
+      layout: embed
+
+exclude:
+  - serve.sh
