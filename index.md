@@ -2,6 +2,8 @@
 title: "Welcome to the webring!"
 ---
 
+# {{ page.title }}
+
 Currently, there are **{{ site.ring | size }}** members:
 
 <!-- this is to support html in the descriptions -->
