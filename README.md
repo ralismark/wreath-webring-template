@@ -2,7 +2,7 @@
 permalink: /about
 ---
 
-# Wreath
+# Wreath Webring Template
 
 Wreath is a template for building a [webrings](https://en.wikipedia.org/wiki/Webring) with Jekyll on GitHub Pages.
 
