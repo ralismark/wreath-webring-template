@@ -43,7 +43,7 @@ To do so, include the following html snippet, replacing `YOUR_NAME` with the use
     height: 3rem;
     border: none;
   "
-  src="{{ site.url }}{{ site.baseurl }}/embed/YOUR_NAME"
+  src="{{ "/embed/YOUR_NAME" | absolute_url }}"
 ></iframe>
 ```
 
@@ -60,7 +60,7 @@ Here's an example of what it looks like (with an added border so you can see the
     height: 3rem;
     border: 1px solid grey;
   "
-  src="{{ site.ring[0].url }}"
+  src="{{ site.ring[0].url | absolute_url }}"
 ></iframe>
 
 {{ "<!" }}{{ "--" }} -->
