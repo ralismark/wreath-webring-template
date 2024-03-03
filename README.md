@@ -8,7 +8,7 @@ Wreath is a template for building a [webrings](https://en.wikipedia.org/wiki/Web
 
 ## Joining
 
-To add a person to the webring, create a file in the `_ring` folder named `YOUR_NAME.md` -- this name won't be used anywhere except for in the URL of the navbar widget.
+To add a person to the webring, create a file in the `_ring` folder named `YOUR_NAME.html` -- this name won't be used anywhere except for in the URL of the navbar widget.
 Its content should be like this:
 
 ```md
