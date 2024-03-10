@@ -1,5 +1,14 @@
+<!doctype html>
 <head>
 	<meta charset="utf-8">
+	<!--
+	 color-scheme: light dark does a number of things:
+	 1. It makes it so that a background isn't added to the iframe. This isn't
+	    actually documented anywhere (wtf), but see https://fvsch.com/transparent-iframes.
+	 2. It tells the browser to use appropriate font colours if the <iframe> has
+	    color-scheme: dark
+	-->
+	<meta name="color-scheme" content="light dark">
 	<base target="_parent">
 </head>
 <body>
