@@ -10,7 +10,7 @@ Currently, there are **{{ site.ring | size }}** members:
 <ul>
 {% for entry in site.ring %}
 <li>
-    <a href="{{ entry.href }}">{{ entry.name }}</a> &mdash; {{ entry.content }}
+    <a href="{{ entry.href }}">{{ entry.name }}</a> &mdash; {{ entry.blurb }}
 </li>
 {% endfor %}
 </ul>

@@ -15,9 +15,11 @@ Its content should be like this:
 ---
 href: "<url>"
 name: "<name>"
+blurb: |
+  <description>
 ---
 
-<description>
+<extra html>
 ```
 
 where:
@@ -67,7 +69,7 @@ Here's an example of what it looks like (with an added border so you can see the
 
 Feel free to tweak the style attribute -- these are just defaults that work for most people.
 
-Unfortunately, due to how iframes work, it can be a bit hard to style the widget.
+You can specify `<extra html>` to inject extra CSS to your widget to make it fit in better with your website.
 
 # For the maintainer
 
