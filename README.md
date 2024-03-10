@@ -71,7 +71,7 @@ Feel free to tweak the style attribute -- these are just defaults that work for 
 
 You can specify `<extra html>` to inject extra CSS to your widget to make it fit in better with your website.
 
-# For the maintainer
+# For users of this template
 
 > you may wish to remove this section when you use this template
 
@@ -84,7 +84,6 @@ Since this uses Jekyll, you can also add additional pages to the ring's website 
 See [the Jekyll documentation](https://jekyllrb.com/docs/) for more information.
 
 ## About the Wreath webring template
-
 
 This template is a cleaned up version of another webring I ran for a bit in late 2021 -- [sike lipu](https://github.com/ralismark/sike-lipu), a webring for fans of toki pona that were in the ma pona discord server.
 I ended up shutting it down in 2021 during a period in my life where I didn't have the time to maintain it.
