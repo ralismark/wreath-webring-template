@@ -71,6 +71,35 @@ Feel free to tweak the style attribute -- these are just defaults that work for 
 
 You can specify `<extra html>` to inject extra CSS to your widget to make it fit in better with your website.
 
+## A note about dark-themed website and iframe backgrounds
+
+The embed is capable of rendering in both light or dark mode.
+However, unless you website is correctly configured for it, it may be styled incorrectly:
+
+|Additional background|Unreadable text|
+|-|-|
+|![Widget with extra grey background](assets/color-scheme-1.png)|![Widget with black text on dark background](assets/color-scheme-2.png)|
+
+The cause of this is that the browser, by default, assumes your website is light-themed, and either [inserts a background](https://github.com/w3c/csswg-drafts/issues/4772) (case 1), or uses colours suitable for light-themed websites (case 2).
+As such, these problems are also more likely to occur in dark-themed websites.
+
+If you already have `<meta name="color-scheme" content="dark light">`, or have `color-scheme: dark light` in your CSS (or similar two-valued `color-scheme`), you shouldn't need to do anything!
+
+Otherwise, if your website:
+
+- **is always dark-themed**, add `<meta name="color-scheme" content="dark">` to the `<head>` of your pages.
+
+- **is always light-themed**, add `<meta name="color-scheme" content="light">` to the `<head>` of your pages.
+
+- **supports both light and dark theme** (e.g. via a theme toggle, or because you respect [`prefers-color-scheme`]), then you need to apply certain CSS rules depending on whether your website is in light or dark mode:
+
+  - In light mode, apply `color-scheme: light` to `:root` or `html` or `body`
+  - In dark mode, apply `color-scheme: dark` to `:root` or `html` or `body`
+
+  Make sure they are also correct for the default theme you use!
+
+[`prefers-color-scheme`]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+
 # For users of this template
 
 > you may wish to remove this section when you use this template
